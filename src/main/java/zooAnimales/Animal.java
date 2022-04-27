@@ -34,11 +34,11 @@ public class Animal {
 	}
 	@Override
 	public String toString(){
-		if(this.zona.toArray().length==0) {
-			return ("Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero);
+		if(this.zona==null) {
+			return ("Mi nombre es "+this.getNombre()+", tengo una edad de "+this.getEdad()+", habito en "+this.getHabitat()+" y mi genero es "+this.getGenero());
 		}
 		else {
-			return ("Mi nombre es "+this.nombre+" tengo una edad de "+this.edad+" habito en "+this.habitat+" y mi genero es "+this.genero+", la zona en la que me ubico es "+this.zona);
+			return ("Mi nombre es "+this.getNombre()+" tengo una edad de "+this.getEdad()+" habito en "+this.getHabitat()+" y mi genero es "+this.getGenero()+", la zona en la que me ubico es "+this.zona);
 		}
 	}
 	public void setTotalAnimales(int num) {

@@ -10,6 +10,7 @@ public class Anfibio extends Animal{
 	public static int totalAnfibios;
 	
 	public Anfibio(){
+		listado = new ArrayList<Anfibio>();
 		listado.add(this);
 		totalAnfibios+=1;
 	}
@@ -18,7 +19,6 @@ public class Anfibio extends Animal{
 		 super(nombre, edad, habitat, genero);
 		 this.colorPiel = colorPiel;
 		 this.venenoso = venenoso;
-		 listado.add(this);
 		 totalAnfibios+=1;
 	}
 	public static int cantidadAnfibios() {

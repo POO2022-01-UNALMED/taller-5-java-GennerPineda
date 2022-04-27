@@ -58,5 +58,8 @@ public class Anfibio extends Animal{
 	public boolean getLargoCola() {
 		return venenoso;
 	}
+	public boolean isVenenoso() {
+		return this.venenoso;
+	}
 
 }

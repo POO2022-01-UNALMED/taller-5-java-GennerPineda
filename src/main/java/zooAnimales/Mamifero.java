@@ -52,6 +52,8 @@ public class Mamifero extends Animal{
 	public int getPatas(){
 		return(patas);
 	}
-	
+	public boolean isPelaje() {
+		return this.pelaje;
+	}
 
 }

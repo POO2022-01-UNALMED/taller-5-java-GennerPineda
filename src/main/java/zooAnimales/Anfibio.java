@@ -9,10 +9,16 @@ public class Anfibio extends Animal{
 	private boolean venenoso;
 	public static int totalAnfibios;
 	
+	public Anfibio(){
+		listado.add(this);
+		totalAnfibios+=1;
+	}
+	
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
 		 super(nombre, edad, habitat, genero);
 		 this.colorPiel = colorPiel;
 		 this.venenoso = venenoso;
+		 listado.add(this);
 		 totalAnfibios+=1;
 	}
 	public static int cantidadAnfibios() {

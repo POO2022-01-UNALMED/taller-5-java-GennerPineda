@@ -10,6 +10,10 @@ public class Animal {
 	private String genero;
 	private ArrayList<Zona> zona;
 	
+	public Animal(){
+		this.zona = new ArrayList<Zona>();
+		totalAnimales+=1;
+	}
 	public Animal(String nombre, int edad, String habitat, String genero){
 		this.nombre = nombre;
 		this.edad = edad;

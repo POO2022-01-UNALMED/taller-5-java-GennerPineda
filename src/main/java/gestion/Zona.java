@@ -7,6 +7,9 @@ public class Zona {
 	private Zoologico zoo;
 	private ArrayList<Animal> animales;
 	
+	public Zona(){
+		this.animales = new ArrayList<Animal>();
+	}
 	public Zona(String nombre, Zoologico zoo) {
 		this.nombre = nombre;
 		this.zoo = zoo;
